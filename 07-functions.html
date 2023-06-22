@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+       
+    </head> 
+    <body>
+        <script>
+         //a function lets us reuse code.The below code only creates te function body and has to be called in order to display
+         /*function function1(){
+          console.log(`hello`);
+          console.log(2+2);
+         }
+         //function command runs the code inside the bracket.Word function creates a new function.use camelCase
+         function1()*/
+         //Parameter= puts a value into a function
+         //Return = gets a value out of  a function
+         //To create a aparameter,type parameter name inside the brackets
+         //A function can have more than one parameter
+         //NaN means Not a Number
+         
+         function calculateTax(cost,taxPercent = 0.1){
+          console.log(cost* taxPercent);
+
+         }
+         calculateTax(2000, 0.2);
+          calculateTax(5000)
+        //PracticeTask
+          function greet(name){
+           if (name === undefined){
+              console.log(`Hi there!`)
+            } else 
+            console.log(`hello ${name}!`);
+          }
+          greet();
+         // greet(`Sam`);
+          //greet(`Merceline`);
+
+          //degree farenheit
+          function convertToFarenheit(celsius){
+            console.log((celsius * 9 / 5) + 32);
+          }
+          convertToFarenheit(25);
+
+          function convertToCelsius(farenheit){
+            console.log((farenheit - 32) * 5 / 9);
+          }
+          convertToCelsius(77);
+          convertToCelsius(86);
+                  </script>
+    </body>
+    </html>

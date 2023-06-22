@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOOLEANS</title>
+       
+    </head> 
+    <body>
+        <script>
+         /*true
+         false
+         console.log(5>8);
+         //to create a boolean ,we type true or false with no symbols.
+         //one way to create a boolean is to compare two values
+         // === or == equal to
+         // !== not equal to
+         console.log(typeof true);
+          console.log(5 === `5.00`);
+          //if statements
+          if(false){
+            console.log(`hello`)
+          } else {
+            console.log(`whatever`)
+          }
+
+          if(13 >= 16){
+            console.log(`You can Drive`);
+          }else{
+            console.log(`You cant Drive`);
+          }
+          //second way to use if
+          const age = 15
+          if(age >= 16){
+            console.log(`You can Drive`);
+          } else if (age >= 14){
+            console.log(`Almost There!`);
+          }
+          else{
+            console.log(`You cant Drive`);
+          }
+          console.log(true && true);
+          console.log(true && false);
+          console.log(0.2 >= 0 && 0.2 < 1 / 3)
+
+          // || or operator
+          //! not operator
+          //&& and operator
+
+          console.log(true || false);
+          console.log(!false)
+          */
+         //truthy and falsy values,0 is a falsy value
+         //Falsy values: false 0 `` NAN Undefined null
+         //Truthy values:Any value not in the above  is a truthy value.
+         if(0){
+          console.log(`truthy`);
+         }
+
+         const cartQuantity = 5;
+
+         if(cartQuantity > 0){
+          console.log(`cart has products`);
+         }
+         console.log(!0);
+
+         //The below will display NaN since the math operation is invalid
+         console.log(`text` / 5);
+         // the below code will show Undefined since it does not have a value
+         let variable1;
+         console.log(variable1);
+
+         //Shortcuts for if statements
+         /* ternary operator ? :
+          Guard Operator &&
+          Default Operator ||
+          */
+         //This is a shortcut of if operator and can e saved in a variable
+          const result =true? `truthy` : `falsy`;
+          console.log(result);
+         //and operator guards the code on the right and can also be saved in a variable
+         false && console.log(`hello`);
+         const message = false && console.log(`hello`);
+         console.log(message);
+         //Default operator ||The results is based on truthy and stops early if the first value is truthy
+
+         /*const currency =`EUR` || `USD`;
+         console.log(currency)*/
+         //default value setting you can use or operator
+         const currency = undefined || `USD`;
+         console.log(currency)
+
+
+
+        </script>
+    </body>
+    </html>
